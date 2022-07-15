@@ -1,0 +1,38 @@
+:root {
+    --darklava: #493B2A;
+    --darkpurple: #593F62;
+    --lightpurple: #7B6D8D;
+    --mutedblue: #8499B1;
+    --babyblue: #A5C4D4;
+
+}
+
+/* * {
+    border-style: dotted;
+} */
+
+header {
+    background-color: var(--babyblue);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+#search {
+    padding-left: 5px;
+    
+}
+
+.city-search {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
