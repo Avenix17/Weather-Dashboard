@@ -12,25 +12,38 @@
     <body>
     <header>Weather Dashboard</header>
 
-    <div id="search">Search for a City:
-        <div id="search-bar">
+    <div class="both-sides">
+        <div class="left-side">
+            <div id="search">
+                <form id="search-bar">
+                    <div id="searchbar-field" class="col-md-3 mb-3">
+                        <label class="city-search" for="validationCustom03">Search for a City:</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">Please enter a city.</div>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
 
+                <hr>
+
+                <div id="search-history">
+                    <ul id="city-list"></ul>
+                </div>
+            </div>
         </div>
 
-        <div id="search-history">
-            <ul id="city-list"></ul>
-        </div>
-    </div>
+        <div class="right-side">
+            <div id="weather-info">
+                <div id="current-weather"></div>
 
-    <div id="weather-info">
-        <div id="current-weather"></div>
-
-        <div id="future-weather">5-Day Forecast:
-            <div id="first-day"></div>
-            <div id="second-day"></div>
-            <div id="third-day"></div>
-            <div id="fourth-day"></div>
-            <div id="fifth-day"></div>
+                <div id="future-weather">5-Day Forecast:
+                    <div id="first-day"></div>
+                    <div id="second-day"></div>
+                    <div id="third-day"></div>
+                    <div id="fourth-day"></div>
+                    <div id="fifth-day"></div>
+                </div>
+            </div>
         </div>
     </div>
 
