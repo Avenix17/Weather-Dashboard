@@ -1,15 +1,16 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather Dashboard</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
-    <body>
+<body>
     <header>Weather Dashboard</header>
 
     <div class="both-sides">
@@ -34,23 +35,110 @@
 
         <div class="right-side">
             <div id="weather-info">
-                <div id="current-weather"></div>
+                <div id="current-weather">
+                    <h2 id="city" class="city">City:</h2>
+                    <div>
+                        <img id='currentDayimg' src="" alt="">
+                    </div>
+                    <div>
+                        <p id="date"></p>
+                    </div>
+                    <div>
+                        <p id="temp"></p>
+                    </div>
+                    <div>
+                        <p id="wind"></p>
+                    </div>
+                    <div>
+                        <p id="humidity"></p>
+                    </div>
+                    <div>
+                        <p id="uvIndex" class="uvIndex"></p>
+                    </div>
+                </div>
 
-                <div id="future-weather">5-Day Forecast:
-                    <div id="first-day"></div>
-                    <div id="second-day"></div>
-                    <div id="third-day"></div>
-                    <div id="fourth-day"></div>
-                    <div id="fifth-day"></div>
+                <div>5-Day Forecast:</div>
+                <div id="future-weather" class="">
+
+                    <div id="first-day">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="date-1"></h4>
+                                <div class="weather-pic-1"></div>
+                            </div>
+                            <div class="card-body">
+                                <p class="temp-1">Temp: </p>
+                                <p class="wind-1">Wind: </p>
+                                <p class="humidity-1">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second-day">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="date-2"></h4>
+                                <div class="weather-pic-2"></div>
+                            </div>
+                            <div class="card-body">
+                                <p class="temp-2">Temp: </p>
+                                <p class="wind-2">Wind: </p>
+                                <p class="humidity-2">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="third-day">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="date-3"></h4>
+                                <div class="weather-pic-3"></div>
+                            </div>
+                            <div class="card-body">
+                                <p class="temp-3">Temp: </p>
+                                <p class="wind-3">Wind: </p>
+                                <p class="humidity-3">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fourth-day">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="date-4"></h4>
+                                <div class="weather-pic-4"></div>
+                            </div>
+                            <div class="card-body">
+                                <p class="temp-4">Temp: </p>
+                                <p class="wind-4">Wind: </p>
+                                <p class="humidity-4">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fifth-day">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="date-5"></h4>
+                                <div class="weather-pic-5"></div>
+                            </div>
+                            <div class="card-body">
+                                <p class="temp-5">Temp: </p>
+                                <p class="wind-5">Wind: </p>
+                                <p class="humidity-5">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    </body>
+</body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </html>
