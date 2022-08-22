@@ -21,24 +21,26 @@
                         <label class="city-search" for="validationCustom03">Search for a City:</label>
                         <input type="text" class="form-control" id="validationCustom03" required>
                         <div class="invalid-feedback">Please enter a city.</div>
-                        <button class="btn btn-primary" type="submit">Search</button>
+                        <button id="search-button" class="btn btn-dark btn-block" type="submit">Search</button>
                     </div>
                 </form>
 
                 <hr>
 
                 <div id="search-history">
+                    <h4>History</h4>
+                    <hr>
                     <ul id="city-list"></ul>
                 </div>
             </div>
         </div>
 
-        <div class="right-side">
+        <div id="right-side" class="right-side hidden">
             <div id="weather-info">
                 <div id="current-weather">
-                    <h2 id="city" class="city">City:</h2>
+                    <h2 id="city" class="city"></h2>
                     <div>
-                        <img id='currentDayimg' src="" alt="">
+                        <img id='current-weather-pic' src="" alt="">
                     </div>
                     <div>
                         <p id="date"></p>
@@ -53,23 +55,23 @@
                         <p id="humidity"></p>
                     </div>
                     <div>
-                        <p id="uvIndex" class="uvIndex"></p>
+                        <p id="uv-index" class="uv-index"></p>
                     </div>
                 </div>
 
-                <div>5-Day Forecast:</div>
+                <h4>5-Day Forecast:</h4>
                 <div id="future-weather" class="">
 
                     <div id="first-day">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="date-1"></h4>
-                                <div class="weather-pic-1"></div>
+                                <h4 id="date-1"></h4>
+                                <img id="weather-pic-1" src="" alt=""></img>
                             </div>
                             <div class="card-body">
-                                <p class="temp-1">Temp: </p>
-                                <p class="wind-1">Wind: </p>
-                                <p class="humidity-1">Humidity: </p>
+                                <p id="temp-1"></p>
+                                <p id="wind-1"></p>
+                                <p id="humidity-1"></p>
                             </div>
                         </div>
                     </div>
@@ -77,13 +79,13 @@
                     <div id="second-day">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="date-2"></h4>
-                                <div class="weather-pic-2"></div>
+                                <h4 id="date-2"></h4>
+                                <img id="weather-pic-2" src="" alt=""></img>
                             </div>
                             <div class="card-body">
-                                <p class="temp-2">Temp: </p>
-                                <p class="wind-2">Wind: </p>
-                                <p class="humidity-2">Humidity: </p>
+                                <p id="temp-2"></p>
+                                <p id="wind-2"></p>
+                                <p id="humidity-2"></p>
                             </div>
                         </div>
                     </div>
@@ -91,13 +93,13 @@
                     <div id="third-day">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="date-3"></h4>
-                                <div class="weather-pic-3"></div>
+                                <h4 id="date-3"></h4>
+                                <img id="weather-pic-3" src="" alt=""></img>
                             </div>
                             <div class="card-body">
-                                <p class="temp-3">Temp: </p>
-                                <p class="wind-3">Wind: </p>
-                                <p class="humidity-3">Humidity: </p>
+                                <p id="temp-3"></p>
+                                <p id="wind-3"></p>
+                                <p id="humidity-3"></p>
                             </div>
                         </div>
                     </div>
@@ -105,13 +107,13 @@
                     <div id="fourth-day">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="date-4"></h4>
-                                <div class="weather-pic-4"></div>
+                                <h4 id="date-4"></h4>
+                                <img id="weather-pic-4" src="" alt=""></img>
                             </div>
                             <div class="card-body">
-                                <p class="temp-4">Temp: </p>
-                                <p class="wind-4">Wind: </p>
-                                <p class="humidity-4">Humidity: </p>
+                                <p id="temp-4"></p>
+                                <p id="wind-4"></p>
+                                <p id="humidity-4"></p>
                             </div>
                         </div>
                     </div>
@@ -119,13 +121,13 @@
                     <div id="fifth-day">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="date-5"></h4>
-                                <div class="weather-pic-5"></div>
+                                <h4 id="date-5"></h4>
+                                <img id="weather-pic-5" src="" alt=""></img>
                             </div>
                             <div class="card-body">
-                                <p class="temp-5">Temp: </p>
-                                <p class="wind-5">Wind: </p>
-                                <p class="humidity-5">Humidity: </p>
+                                <p id="temp-5"></p>
+                                <p id="wind-5"></p>
+                                <p id="humidity-5"></p>
                             </div>
                         </div>
                     </div>
@@ -137,8 +139,9 @@
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 
 </html>
