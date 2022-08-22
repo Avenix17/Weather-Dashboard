@@ -63,8 +63,17 @@ li {
     font-size: large;
 }
 
+a {
+    color: black;
+
+}
+
 a:hover {
-    background-color: var(--babyblue);
+    color: var(--babyblue);
+}
+
+a:active, a:visited {
+    color: black;
 }
 
 #search-history h4 {

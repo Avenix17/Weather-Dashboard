@@ -132,7 +132,7 @@ function saveSearchHistory() {
 
     cityList.innerHTML = searchHistory
         .map(userSearch => {
-            return `<li class="search-results"><a>${userSearch}</a><li>`;
+            return `<li class="search-results"><a href="#">${userSearch}</a></li>`;
         })
         .join("");
 };
@@ -141,6 +141,6 @@ function saveSearchHistory() {
 searchHistory = JSON.parse(localStorage['searchHistory']);
 cityList.innerHTML = searchHistory
     .map(userSearch => {
-        return `<li class="search-results" href="#"><a>${userSearch}</a><li>`;
+        return `<li class="search-results"><a href="#">${userSearch}</a></li>`;
     })
     .join("");
